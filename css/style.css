@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fbf1ee;
+}
+
+header h1{
+    padding: 10px;
+    font-family: pixelify sans, sans-serif;
+    text-align: center;
+    color:#5D688A ;
+    background-color: #FFDBB6;
+    border-radius: 10px;
+    margin-bottom: 10px
+}
+
+.container{
+    padding: 25px;
+    background-color: #FFDBB6;
+    border-radius: 10px;
+    font-family:  "Jersey 10";
+    color: #444958;
+    width: 350px
+    fit-content
+}
+
+.todo-app{
+    padding: 5px;
+}
+
+.input-form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#taskInput, #dueDateInput{
+    color: #5D688A;
+    flex: 1;
+    background-color: #FFF2EF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 6px 2px;  
+    font-family: pixelify sans;  
+}
+
+.input-form button{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    width: 35px;
+    height: 25px;
+    margin-top: 4px;
+    cursor: pointer;
+    background: #FFF2EF;
+    font-family: pixelify sans;
+}
+
+.input-form button:hover{
+    background: #fb7575;
+}
+
+.controls{
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-delete-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#btn-filter, #btn-delete {
+    margin-right: 0; /* hilangkan margin kanan yang terlalu besar */
+    padding: 5px 10px;
+    background-color: #FFF2EF;
+    border: none;
+    border-radius: 5px;
+    font-family: pixelify sans;
+    color: #2f3033;
+    cursor: pointer;
+}
+
+#btn-filter:hover, #btn-delete:hover {
+    background-color: #fb7575;
+    color: white;
+}
+
+
+/* Task List */
+#task-list{
+    margin-top: 10px;
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 5px;
+    color: #2f3033;
+}
+
+#task-list li{
+   display: flex;
+    justify-content: space-between; /* agar isi kiri ke kiri dan tombol kanan ke kanan */
+    align-items: center; /* vertical center */
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background: #FFF2EF;
+    transition: background-color 0.3s ease;
+}
+
+.task-text {
+    flex: 1;
+    text-align: left;
+}
+.task-buttons {
+    display: flex;
+    gap: 10px; /* jarak antar tombol ceklis dan delete */
+    align-items: center;
+}
+
+
+/* button inside tesk */
+.btn-complete, btn-delete {
+    background: #FFDBB6;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 2px 5px;
+    color: #48bb78;
+  border-radius: 2px;
+    transition: color 0.3s;
+    justify-content: center;
+}
+
+.btn-complete{
+margin-right: 10px;
+}
+
+.btn-complete:hover {
+    background-color:#ffaf9d ;
+    color: #2f855a;
+}
+
+
+
+.btn-delete {
+    padding: 3px 5px;
+    font-size: 1.2rem;
+    background: #FFDBB6;
+    color: #ff5555;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    transition: color 0.3s;
+    justify-content: center;
+}
+
+.btn-delete:hover {
+    background-color: #ffbf7e;
+    color: #f00f0f;
+}
+    
+/* No tasks message */
+#no-tasks-message {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+

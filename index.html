@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Alysia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <div class="container">
+        <div class="todo-app">
+            <form class="input-form" onsubmit="addtask(event)">
+                <input type="text" id="taskInput" placeholder="  Enter a new task" />
+                <input type="date" id="dueDateInput"/>
+                <button type="submit">Add</button>
+            </form>
+            <div class="controls">
+                <button id="btn-filter">Filter</button>
+                <button id="btn-delete">Delete All</button>
+            </div>
+        </div>
+        <div class="todo-container">
+            <ul id="task-list">
+                <p id="no-tasks-message">No tasks available. Please add a task.</p>
+            </ul>
+        </div>
+    </div>
+
+<script src="Js/script.js"></script>
+</body>
+</html>
